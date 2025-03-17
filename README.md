@@ -15,7 +15,16 @@ Dr Pradeep Lamichhane<br>
 School of Engineering<br>
 The University of Warwick
 
-### Download Training Dataset
+### Installation
+#### Fortran
+Ensure that **gfortran** is installed on the machine.
+
+```
+gfortran --version
+```
+If it is not, follow the instructions on the Fortran website to do so: https://fortran-lang.org/learn/os_setup/install_gfortran .
+
+
 To download the training dataset from the Department for Energy Security and Net Zero, please go to https://beta.ukdataservice.ac.uk/datacatalogue/studies/study?id=9050#!/access-data and download the two largest CSV files under "**Access Data**". These files should be called:
 * "**9050csv_cleansed_data_set1_b693745c14a63a7ed1c6299c5abe1a19**"
 * "**9050csv_cleansed_data_set2_130a6915e7f8a17bb83efabdbdb7ec87**". 
