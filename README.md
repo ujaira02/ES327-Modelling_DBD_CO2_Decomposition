@@ -25,7 +25,7 @@ gfortran --version
 If it is not, follow the instructions on the Fortran website to do so: https://fortran-lang.org/learn/os_setup/install_gfortran
 
 #### Program
-Ensure that the following files are downloaded to the preferred working directory:
+Ensure that the following files from the **Model** folder are downloaded to the preferred working directory:
 * **2103892_ES327_Code.f90**
 * **CO2Modelling**
 * **CO2ratesF.dat**
