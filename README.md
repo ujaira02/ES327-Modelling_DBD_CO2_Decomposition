@@ -22,12 +22,19 @@ Ensure that **gfortran** is installed on the machine.
 ```
 gfortran --version
 ```
-If it is not, follow the instructions on the Fortran website to do so: https://fortran-lang.org/learn/os_setup/install_gfortran .
+If it is not, follow the instructions on the Fortran website to do so: https://fortran-lang.org/learn/os_setup/install_gfortran
 
+#### Program
+Ensure that the following files are downloaded to the preferred working directory:
+* 2103892_ES327_Code.f90
+* CO2Modelling
+* CO2ratesF.dat
+* CO2ratesB.dat
+* O2ratesF.dat
+* O2ratesB.dat
 
-To download the training dataset from the Department for Energy Security and Net Zero, please go to https://beta.ukdataservice.ac.uk/datacatalogue/studies/study?id=9050#!/access-data and download the two largest CSV files under "**Access Data**". These files should be called:
-* "**9050csv_cleansed_data_set1_b693745c14a63a7ed1c6299c5abe1a19**"
-* "**9050csv_cleansed_data_set2_130a6915e7f8a17bb83efabdbdb7ec87**". 
+If downloading via **web browser**, **right-click** the file link and choose “**Save As...**” then select the desired folder.
+
 
 Once the files from this repository are also downloaded, move the entire contents of both **9050csv_cleansed_data_...** files into the "**TrainingData**" folder, found in this repository's "**Data**" folder. 
 
