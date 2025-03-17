@@ -26,32 +26,46 @@ If it is not, follow the instructions on the Fortran website to do so: https://f
 
 #### Program
 Ensure that the following files are downloaded to the preferred working directory:
-* 2103892_ES327_Code.f90
-* CO2Modelling
-* CO2ratesF.dat
-* CO2ratesB.dat
-* O2ratesF.dat
-* O2ratesB.dat
+* **2103892_ES327_Code.f90**
+* **CO2Modelling**
+* **CO2ratesF.dat**
+* **CO2ratesB.dat**
+* **O2ratesF.dat**
+* **O2ratesB.dat**
 
 If downloading via **web browser**, **right-click** the file link and choose “**Save As...**” then select the desired folder.
 
+### Setting Up
+#### Open the Terminal
+* On **macOS** or **Linux**, open the “**Terminal**” application.
+* On **Windows**, open “**Command Prompt**”, “**PowerShell**”, or a terminal provided by the Fortran environment (such as **Git Bash** or the **MinGW** terminal).
 
-Once the files from this repository are also downloaded, move the entire contents of both **9050csv_cleansed_data_...** files into the "**TrainingData**" folder, found in this repository's "**Data**" folder. 
-
-Now open the terminal and use commands to direct yourself to the location of the downloaded "**TrainingData**" folder.
-
-```
-(ls -1 | grep -v "^PropertyIds.csv$" | sort | awk 'BEGIN {print "property_id"} {print $0}' > PropertyIds.csv)
-```
-
-This code edits the file "**PropertyIds.csv**" within "**TrainingData**", to input all the filenames of the training data properties under the column "**property_id**". For example, the first file may be called "**Property_ID=EOH0001.csv**", so that should be the first entry under "**property_id**".
-
-### How It Works
-Once all the files are downloaded, the "**Model.ipynb**" file can be accessed and run. This Jupyter Notebook contains all the necessary instructions within. It is recommended that **Anaconda-Navigator** is used to access the notebook, however if the Python language, jupyter-lab package, and other accompanying packages are already installed on the machine the following terminal code may be used to access "**JupyterLab**" to run the notebook.
+#### Navigate to working directory
 
 ```
-jupyter-lab
+cd ~/ProjectDirectory
 ```
+
+### Running the Program
+#### Compile the Fortran code (Optional)
+
+```
+gfortran 2103892_ES327_Code .f90 -o CO2modelling
+```
+
+#### Run the Program
+
+```
+./CO2modelling
+```
+
+### Verify Output (Optional)
+List the directory contents and find **plotdata.dat**.
+
+```
+ls
+```
+
 <br>
 <br>
 <br>
